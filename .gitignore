@@ -1,6 +1,4 @@
 node_modules
 gulpfile.js
 *.json
-smart-grid.scss
-smart-gird.css
 .idea
