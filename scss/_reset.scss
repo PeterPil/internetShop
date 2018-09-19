@@ -14,9 +14,11 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	//font-size: 100%;
+	//font: inherit;
 	vertical-align: baseline;
+	font-weight: 400;
+	font-size: 14px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -43,10 +45,12 @@ table {
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 input,
 textarea,
 button{
     outline: none;
+	border: none;
+	resize:none
 }

@@ -1,0 +1,153 @@
+.commodity {
+
+  &__nav {
+    display: block;
+    width: 100%;
+    height: 128px;
+    line-height: 128px;
+    & i {
+      margin: 0 15px;
+    }
+  }
+  &__link {
+    color: $descrColor;
+    @include fontsWeiSize(400, 1.3rem);
+  }
+
+  &-gallery {
+    display: inline-flex;
+    width: 50%;
+    //justify-content: flex-start;
+    height: 100%;
+    &__items {
+      width: 30%;
+      padding-top: 21px;
+      text-align: center;
+    }
+    &__scroll {
+      display: block;
+      margin-bottom: 15px;
+      & img {
+        width: 38px;
+        height: 108px;
+      }
+      & i {
+        font-size: 25px;
+      }
+    }
+
+    &__main-img {
+      display: block;
+      width: 70%;
+      height: 100%;
+      & img {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-info {
+    padding: 61px 92px 61px 92px;
+    background-color: $backColor;
+    display: flex;
+    justify-content: space-between;
+    &-flex {
+      width: 100%;
+      display: inline-flex;
+      //justify-content: space-between;
+
+    }
+    &__descr {
+      width: 50%;
+    }
+    &__name {
+      @include fontsWeiSize(600, 3rem);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    &__code {
+      font-size: 16px;
+      font-weight: 600;
+      color: $textColor;
+      margin-bottom: 50px;
+      & em {
+        @include fontsWeiSize(700, 16px);
+        color: black;
+        font-style: normal;
+
+      }
+    }
+
+    &__buying {
+      width: 50%;
+
+
+    }
+    &__price {
+      @include fontsWeiSize(600, 40px);
+      margin-bottom: 32px;
+    }
+    &__available {
+      @include fontsWeiSize(600, 16px);
+      margin-bottom: 41px;
+    }
+    &__leave-comment {
+      @include fontsWeiSize(600, 16px);
+      color: $mainBlueColor;
+      //line-height: .75;
+      height: 38px;
+      line-height: 38px;
+      margin-bottom: 61px;
+    }
+    &__main-characteristics {
+      @include fontsWeiSize(600, 18px);
+      margin-bottom: 32px;
+
+    }
+    &__property {
+      @include fontsWeiSize(600, 16px);
+      line-height: 1.5;
+      & em {
+        font-style: normal;
+        color: $textColor;
+        font-size: 16px;
+      }
+      &--inlineflex {
+        display: inline-flex;
+      }
+      &-text {
+        @include fontsWeiSize(600, 16px);
+
+      }
+      &-original {
+        color: $textColor;
+        @include fontsWeiSize(400, 16px);
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &-guaranty {
+    display: inline-flex;
+    margin-top: 162px;
+    &__item {
+      width: 33%;
+    }
+    &__title {
+      @include fontsWeiSize(600, 18px);
+      margin-bottom: 18px;
+      & i {
+        color: $mainBlueColor;
+        font-size: 18px;
+      }
+    }
+    &__subtitle {
+      @include fontsWeiSize(400, 16px);
+      line-height: 1.5;
+      color: $textColor;
+    }
+  }
+
+}
+

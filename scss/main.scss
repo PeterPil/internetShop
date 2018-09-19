@@ -1,5 +1,14 @@
 @import "_reset";
-
+@import "_variables";
+@import "smart-grid";
+@import "_header";
+@import "_menu";
+@import "_commodity";
+@import "_buttonSocial";
+@import "_comments";
+@import "_galleryware";
+@import "_features";
+@import "_footer";
 html {
   font-size: 10px;
 }
@@ -12,5 +21,23 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
+  color: #000;
+
+
   
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.container {
+  @include wrapper();
+}
+
+.row {
+  //@include row-flex();
+  margin-left: -15px;
+  margin-right: -15px;
 }

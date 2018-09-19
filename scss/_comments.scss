@@ -1,0 +1,116 @@
+.comments {
+  padding-top: 60px;
+  &-button {
+    background-color: $backColor;
+    display: inline-flex;
+    height: 78px;
+    line-height: 78px;
+
+    &__link {
+      display: block;
+      width: 190px;
+      text-align: center;
+      position: relative;
+      @include fontsWeiSize(400, 2.4rem);
+      color: $descrColor;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 70%;
+        width: 1px;
+        background-color: $descrColor;
+        transform: translateY(25%);
+      }
+      &:last-child::after {
+        display: none;
+      }
+      &:active {
+        color: $mainBlueColor ;
+        font-weight: 600;
+      }
+    }
+  }
+  &-main {
+    background-color: $backColor;
+    padding: 82px 112px 67px 92px;
+    display: inline-flex;
+  }
+  &-opinion {
+    @include col();
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 70px;
+    &__area {
+      @include fontsWeiSize(400, 17px);
+      font-family: 'Open Sans', sans-serif;
+      width: 100%;
+
+      height: 110px;
+      padding: 11px 20px;
+      border: $textColor 1px solid;
+      background-color: inherit;
+      margin-bottom: 20px;
+    }
+  }
+  &-desk {
+    width: 50%;
+
+    &__opinion-title {
+      @include fontsWeiSize(600, 18px);
+      margin-bottom: 30px;
+    }
+
+
+
+
+    &__auth-users {
+      text-align: center;
+      margin-top: 19px;
+    }
+    &--flex-end {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-flex {
+      width: 45%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+    }
+
+  }
+
+  &-blockquote {
+    @include col();
+    &-flex {
+      width: 100%;
+      display: inline-flex;
+      justify-content: space-between;
+      margin-bottom: 19px;
+      align-items: center;
+    }
+    &__title {
+      @include fontsWeiSize(600, 18px);
+    }
+    &__date {
+      @include fontsWeiSize(600, 18px);
+      color: $descrColor;
+    }
+    &__subtitle {
+      @include fontsWeiSize(400, 17px);
+      color: $textColor;
+      line-height: 1.41;
+      margin-bottom: 51px;
+    }
+
+  }
+  &-all {
+    @include fontsWeiSize(600, 24px);
+    margin-bottom: 50px;
+  }
+}

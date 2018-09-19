@@ -1,0 +1,77 @@
+.footer {
+  background-color: $mainBlueColor;
+  padding: 70px 0;
+
+  &-main {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    //display: inline-block;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    &__nav {
+      width: 40%;
+
+    }
+    &__title {
+      @include fontsWeiSize(600, 16px);
+      margin-bottom: 35px;
+      color: white;
+    }
+    &--flex-col {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  &-menu {
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+    &__link {
+      @include fontsWeiSize(400, 16px);
+      color: white;
+      margin-bottom: 15px;
+    }
+  }
+  &-contacts {
+    width: 50%;
+    text-align: right;
+    &-block {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__name {
+      @include fontsWeiSize(600, 16px);
+      margin-bottom: 35px;
+      color: white;
+    }
+    &__tel {
+      @include fontsWeiSize(600, 24px);
+      display: block;
+      margin-bottom: 25px;
+      color: white;
+    }
+    &__email {
+      @include fontsWeiSize(600, 16px);
+      color: white;
+    }
+  }
+
+  &__socials {
+    display: block;
+    width: 100%;
+  }
+}
+
+.socials__links--colorW {
+
+}

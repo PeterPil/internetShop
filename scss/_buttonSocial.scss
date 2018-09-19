@@ -1,0 +1,49 @@
+.btn-1 {
+  cursor: pointer;
+  border: $mainBlueColor 2px solid;
+  color: $mainBlueColor;
+  height: 38px;
+  padding: 10px 21px;
+  border-radius: 19px;
+  background-color: inherit;
+  @include fontsWeiSize(600, 14px);
+  &--btm-mrg {
+    margin-bottom: 40px;
+  }
+  &--brdnone {
+    @include fontsWeiSize(600, 16px);
+    border-radius: 0;
+    padding: 0 45px;
+  }
+}
+
+.btn-2 {
+  cursor: pointer;
+  background-color: $btnBasketColor;
+  color: #fff;
+  //height: 60px;
+  padding: 14px 45px;
+  border-radius: 30px;
+  @include fontsWeiSize(400, 24px);
+  & img {
+    margin-left: 10px;
+  }
+  &--shadow {
+    width: 250px;
+    box-shadow: 0px 9px 56px -9px rgba(0,0,0,1);
+    background-color: $mainBlueColor;
+    margin: 0 auto;
+  }
+}
+
+.socials {
+  height: 24px;
+  &__links {
+    font-size: 24px;
+    margin-left: 20px;
+    &--colorW {
+      color: #ffffff;
+    }
+  }
+
+}

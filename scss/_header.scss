@@ -1,0 +1,34 @@
+//.head {
+//  width: 100%;
+//}
+.header {
+  width: 100%;
+  height: 10.2rem;
+  line-height: 10.2rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    @include size(5);
+    @include fontsWeiSize(400, 1.3rem);
+    color: black;
+  }
+  &-contacts {
+    @include size(3);
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__number {
+      @include fontsWeiSize(700, 2.2rem);
+    }
+    &__down-list {
+      font-size: 1.5rem;
+      margin-left: .5rem;
+    }
+  }
+}
+
+
+
